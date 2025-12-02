@@ -1,0 +1,96 @@
+```html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lisseur Élégance Premium - Produit</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <script src="components/navigation.js"></script>
+    <custom-navigation></custom-navigation>
+
+    <!-- Product Header -->
+    <section class="py-12 bg-gradient-to-r from-white to-rose-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="http://static.photos/beauty/320x240/3" alt="Lisseur Élégance - Vue de face" class="w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition duration-300">
+                        <img src="http://static.photos/beauty/320x240/4" alt="Lisseur Élégance - Vue de profil" class="w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition duration-300">
+                        <img src="http://static.photos/beauty/320x240/5" alt="Lisseur Élégance - Détails" class="w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition duration-300">
+                        <img src="http://static.photos/beauty/320x240/6" alt="Lisseur Élégance - En action" class="w-full h-auto rounded-lg cursor-pointer hover:scale-105 transition duration-300">
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">Lisseur Élégance Premium</h1>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <span class="text-4xl font-bold text-rose-600">149€</span>
+                        <span class="text-gray-500 line-through text-xl">189€</span>
+                        <span class="bg-rose-100 text-rose-800 px-3 py-1 rounded-full text-sm font-semibold">Promotion</span>
+                    </div>
+                    <p class="text-gray-600 text-lg mb-6">
+                        Le fer à lisser ultime qui allie performance technique et design élégant. 
+                        Transformez votre routine capillaire en moment de luxe.
+                    </p>
+                    <div class="mb-6">
+                        <button onclick="addToCart(productData)" class="bg-rose-600 hover:bg-rose-700 text-white px-8 py-4 rounded-lg font-semibold w-full transition duration-300 transform hover:scale-105">
+                            Ajouter au panier
+                        </button>
+                    </div>
+                    <div class="flex items-center text-gray-600">
+                        <i data-feather="truck" class="mr-2"></i>
+                        <span>Livraison gratuite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Caractéristiques Techniques</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-feather="thermometer" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Chauffe Intelligente</h3>
+                    <p class="text-gray-600">De 120°C à 230°C avec contrôle précis pour tous types de cheveux</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-feather="shield" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Protection Avancée</h3>
+                    <p class="text-gray-600">Plaques en céramique et tourmaline qui émettent des ions négatifs</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-2xl text-center">
+                    <div class="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i data-feather="zap" class="text-rose-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Rapidité Extrême</h3>
+                    <p class="text-gray-600">Prêt en 30 secondes seulement pour un lissage express</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Questions Fréquentes</h2>
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Quelle est la garantie offerte ?</h3>
+                    <p class="text-gray-600">Nous offrons une garantie exceptionnelle de 3 ans sur tous nos produits, preuve de notre engagement qualité.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-3">Le
